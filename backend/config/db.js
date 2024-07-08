@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const connectDB=async()=>{
     try {
-        mongoose.connect("mongodb+srv://harshit3152001:harshit3152001@cluster0.qtloynv.mongodb.net/");
+        mongoose.connect(process.env.MONGODB_URI);
         console.log("Db is connected");
     } catch (error) {
         console.log(error);
