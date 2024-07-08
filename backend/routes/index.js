@@ -14,11 +14,12 @@ import { getCategoryProduct } from '../controller/product/getCategoryProductOne.
 import { getCategoryWiseProduct } from '../controller/product/getCategoryWiseProduct.js';
 import { getProductDetails } from '../controller/product/getProductDetails.js';
 import { addToCartController } from '../controller/user/addToCartController.js';
-import { countAddToCartProduct } from '../controller/user/countAddToCartProuct.js';
+// import { countAddToCartProduct } from '../controller/user/countAddToCartProuct.js';
 import { addToCartViewProduct } from '../controller/user/addToCartViewProduct.js';
 import { updateAddToCartProduct } from '../controller/user/updateAddtoCartProduct.js';
 import { deleteAddToCartProduct } from '../controller/user/deleteAddToCartProduct.js';
 import { searchProduct } from '../controller/product/searchProduct.js';
+import { countAddToCartProduct } from '../controller/user/countAddToCartProduct.js';
 
 const router=Router();
 
