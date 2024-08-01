@@ -5,6 +5,7 @@ import bcryptjs from 'bcryptjs';
  export const UserSignUpController=async(req,res)=>{
     try {
         const {name,password,email,profilePic}=req.body;
+        console.log("request is reaching");
 
         const user=await userModel.findOne({email});
         if(user ){

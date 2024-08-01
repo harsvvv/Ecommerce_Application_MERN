@@ -50,9 +50,9 @@ const Header = () => {
   return (
     <header className='h-16 fixed w-full z-10    shadow-md bg-white border-b-2 border-black'>
     <div className='h-full min-w-full flex items-center container mx-auto px-4 justify-between' >
-    <div>
+    <div className=''>
       <Link to="/">
-      <Logo w={90} h={50}/>
+      <Logo w={150} h={50}/>
       </Link>
     </div>
     <div className='hidden   lg:flex  border rounded-full flex items-center w-full justify-between max-w-sm focus-within:shadow-md'>

@@ -41,7 +41,7 @@ const BannerProduct = () => {
         >
           {desktopImages.map((imageUrl, index) => (
             <SwiperSlide key={index}>
-              <div className='h-72 w-full bg-slate-200'>
+              <div className='h-80 w-full bg-slate-200'>
                 <img src={imageUrl} alt={`Slide ${index}`} className='w-full h-full' />
               </div>
             </SwiperSlide>
@@ -56,7 +56,7 @@ const BannerProduct = () => {
           {mobileImages.map((imageUrl, index) => (
             <SwiperSlide key={index}>
               <div className='h-72 w-full bg-slate-200'>
-                <img src={imageUrl} alt={`Slide ${index}`} className='w-full h-full' />
+                <img src={imageUrl} alt={`Slide ${index}`} className='w-full h-full object-scale-down' />
               </div>
             </SwiperSlide>
           ))}
