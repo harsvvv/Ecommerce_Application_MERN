@@ -80,22 +80,26 @@ const SignUp = () => {
        <div className=' container p-10'>
   <div className='bg-white p-2 w-full mx-auto max-w-md '>
 
-  <div className='w-20 h-20 mx-auto relative overflow-hidden rounded-full '>
-    <input type='file'
+  <div className=' '>
+    {/* <input type='file'
     onChange={handleUploadPic}
         ref={fileRef}
         className='hidden'
         accept='image/*'
         
-    />
+    /> */}
    
-    <div>
+    {/* <div>
   <img src={data?.profilePic || loginIcons} alt='login icons' />
 
-    </div>
-    <div onClick={()=>fileRef.current.click()} className='text-xs bg-slate-200 w-full absolute bottom-0 bg-opacity-75 pb-4 pt-2 cursor-pointer text-center'>
+    </div> */}
+    <div className='w-20 h-20 mx-auto flex justify-center items-center'>
+    {/* <img src={loginIcons} alt='login icons'/> */}
+    <h1 className='font-semibold text-4xl'>SignUp</h1>
+  </div>
+    {/* <div onClick={()=>fileRef.current.click()} className='text-xs bg-slate-200 w-full absolute bottom-0 bg-opacity-75 pb-4 pt-2 cursor-pointer text-center'>
         upload photo
-    </div>
+    </div> */}
   </div>
   <form onSubmit={handleSubmit} className='p-4'>
   <div className='grid'>

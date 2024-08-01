@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext, useState } from 'react'
-import loginIcons from "../assest/signin.gif"
+// import loginIcons from "../assest/signin.gif"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -60,8 +60,9 @@ const Login = () => {
     <section id='login' >
        <div className=' container p-10'>
   <div className='bg-white p-2 w-full mx-auto max-w-md '>
-  <div className='w-20 h-20 mx-auto '>
-    <img src={loginIcons} alt='login icons'/>
+  <div className='w-20 h-20 mx-auto flex justify-center items-center'>
+    {/* <img src={loginIcons} alt='login icons'/> */}
+    <h1 className='font-semibold text-4xl'>Login</h1>
   </div>
   <form onSubmit={handleSubmit} className='p-4'>
     <div className='grid'>
