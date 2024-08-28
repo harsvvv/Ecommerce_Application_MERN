@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <div className=''>
       <CategoryList />
-      <BannerProduct/>
-      <HorizontalCardProduct category={"airpods"} heading={"Top Airpodes"}/>
-      <HorizontalCardProduct category={"camera"} heading={"Top Camera's"}/>
+      {/* <BannerProduct/> */}
+      <VerticalCardProduct category={"airpods"} heading={"Top Airpodes"}/>
+      <VerticalCardProduct category={"camera"} heading={"Top Camera's"}/>
      
       
       <VerticalCardProduct category={"mobiles"} heading={"Mobile's"}/>

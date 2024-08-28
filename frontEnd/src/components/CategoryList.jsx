@@ -37,7 +37,7 @@ const CategoryList = () => {
                     categoryProduct.map((product, index) => (
                         <Link to={"/product-category/" + product?.category} key={product?.category+index}>
                             <div className='text-center'>
-                                <div className='w-16 h-16 md:w-20 flex justify-center md:h-20 rounded-full overflow-hidden p-3 bg-white'>
+                                <div className='w-16 h-16 md:w-20 flex justify-center md:h-20 rounded-2xl border border-black overflow-hidden p-3 bg-white'>
                                     <img
                                         src={product?.productImage[0]}
                                         alt={product?.category}

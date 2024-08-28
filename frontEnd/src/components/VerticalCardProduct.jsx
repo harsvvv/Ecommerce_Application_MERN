@@ -59,8 +59,8 @@ const VerticalCardProduct = ({ category, heading }) => {
               </div>
             ))
           : data.map((product, index) => (
-              <Link to={"product/"+product?._id} key={index} className='bg-white rounded-sm shadow-md cursor-pointer hover:scale-105 transition-transform'>
-                <div className='bg-gray-200 h-48'>
+              <Link to={"product/"+product?._id} key={index} className='bg-white m-2 rounded-lg border-1 border-yellow-200 shadow-md cursor-pointer hover:scale-105 transition-transform'>
+                <div className='bg-gray-200 rounded-t-lg h-48'>
                   <img
                     src={product?.productImage[0]}
                     alt={product?.productName}
@@ -74,7 +74,7 @@ const VerticalCardProduct = ({ category, heading }) => {
                     <p className='font-medium text-gray-800'>{displayINRCurrency(product?.sellingPrice)}</p>
                     <p className='text-gray-400 line-through'>{displayINRCurrency(product.price)}</p>
                   </div>
-                  <button className="bg-red-600 text-sm hover:bg-red-700 text-white px-3 py-0.5 rounded-full" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, product?._id)}}>
+                  <button className=" text-sm border-2 border-black  text-neutral-600 px-3 py-0.5 rounded-lg" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, product?._id)}}>
                     Add to Cart
                   </button>
                 </div>

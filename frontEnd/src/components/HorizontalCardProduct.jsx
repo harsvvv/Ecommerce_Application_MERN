@@ -65,9 +65,9 @@ const HorizontalCardProduct = ({ category, heading }) => {
           : data.map((product, index) => (
               <Link to={"/product/" + product?._id}
                 key={index}
-                className="w-full min-w-[280px] md:min-w-[320px] max-w-[280px] md:max-w-[320px] h-36 bg-white rounded-sm shadow-md flex"
+                className="w-full min-w-[280px] md:min-w-[320px] border border-black rounded-lg max-w-[280px] md:max-w-[320px] h-36 bg-white rounded-sm shadow-md flex"
               >
-                <div className="bg-slate-200 h-full w-[120px] md:w-[145px]">
+                <div className="bg-slate-200 rounded-l-lg h-full w-[120px] md:w-[145px]">
                   <img
                     src={product?.productImage[0]}
                     alt={product?.productName}
@@ -87,7 +87,7 @@ const HorizontalCardProduct = ({ category, heading }) => {
                       {displayINRCurrency(product.price)}
                     </p>
                   </div>
-                  <button className="bg-red-600 text-sm hover:bg-red-700 text-white px-3 py-0.5 rounded-full" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, product?._id)}}>
+                  <button className=" text-sm border-2 border-black text-black hover:bg-yellow-400 px-3 py-0.5 rounded-lg" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, product?._id)}}>
                     Add to Cart
                   </button>
                 </div>

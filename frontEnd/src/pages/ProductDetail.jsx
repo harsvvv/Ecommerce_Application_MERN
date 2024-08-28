@@ -96,7 +96,7 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className="flex flex-col gap-1">
-         <p className="capitalize text-red-600 rounded text-center p-2 bg-red-200 max-w-24 ">{data.brandName}</p>
+         <p className="capitalize text-black rounded text-center p-2 bg-yellow-600 max-w-24 ">{data.brandName}</p>
          <h2 className="capitalize text-2xl font-medium lg:text-4xl">{data?.productName}</h2>
        <p className="capitalize text-slate-500">{data.category}</p>
        <div className="flex text-red-600 items-center gap-1">
@@ -111,8 +111,8 @@ const ProductDetail = () => {
         <p className="line-through text-slate-500">{displayINRCurrency(data.price)}</p>
        </div>
        <div className="flex items-center gap-3 ">
-        <button className="border-2 hover:bg-red-600 hover:text-white border-red-600 rounded px-3 py-1 min-w-[100px]">buy</button>
-        <button className="border-2 border-red-600  hover:bg-red-600 hover:text-white px-3 py-1 rounded min-w-[100px]" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, data?._id)}}>Add to Cart</button>
+        <button className="border-2 border-yellow-500 hover:text-black border-red-600 rounded px-3 py-1 min-w-[100px]">buy</button>
+        <button className="border-2 border-yellow-500 hover:text-black px-3 py-1 rounded min-w-[100px]" onClick={(e)=> {e.preventDefault();  handleAddToCart(e, data?._id)}}>Add to Cart</button>
         
        </div>
        <div>

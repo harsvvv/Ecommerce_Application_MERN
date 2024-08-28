@@ -55,9 +55,9 @@ const Header = () => {
       <Logo w={150} h={50}/>
       </Link>
     </div>
-    <div className='hidden   lg:flex  border rounded-full flex items-center w-full justify-between max-w-sm focus-within:shadow-md'>
-      <input type='text' placeholder='search...' className='w-full h-8 rounded-l-full p-3  outline-none' onChange={handleSearch}/>
-      <div className='text-lg min-w-[50px] w-13 h-8 bg-red-600 flex items-center justify-center rounded-r-full'>
+    <div className='hidden   lg:flex  border-black  flex items-center w-full justify-between max-w-sm focus-within:shadow-md'>
+      <input type='text' placeholder='search...' className='w-full border-2 border-black h-10 rounded-md p-3  outline-none' onChange={handleSearch}/>
+      <div className='text-lg min-w-[50px] w-13 h-10 rounded-r-md rounded-l-md bg-black text-white flex items-center justify-center '>
       <CiSearch style={{ fontWeight: 'bold', fontSize: '24px' }} />
       </div>
     </div>
@@ -110,14 +110,14 @@ const Header = () => {
     {
        user?._id ?(
         <Link to="/login">
-    <button onClick={handleLogout} className='px-3 py-1 text-white hover:opacity-90 rounded-full bg-red-500'>
+    <button onClick={handleLogout} className='px-3 py-1 text-black hover:opacity-90 rounded-lg hover:bg-black hover:text-white border-2 border-black'>
    
     LogOut
     
     </button>
     </Link>
       ):(   <Link to="/login">
-    <button  className='px-3 py-1 text-white hover:opacity-90 rounded-full bg-red-500'>
+    <button  className='px-3 py-1 text-black hover:opacity-90 rounded-lg border-2 border-black'>
    
     LogIn
     

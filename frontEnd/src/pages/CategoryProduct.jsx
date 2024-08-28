@@ -117,7 +117,7 @@ const CategoryProduct = () => {
                                             </div>
                                         </div>
                                         <button
-                                            className="bg-red-600 text-sm hover:bg-red-700 text-white px-3 py-1 rounded-full mt-2"
+                                            className="border-2 border-black text-sm  text-black px-3 py-1 rounded-full mt-2"
                                             onClick={(e) => handleAddToCart(e, product._id)}
                                         >
                                             Add to Cart
