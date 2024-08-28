@@ -42,13 +42,14 @@ const Login = () => {
           }) 
           const data1=await res.json();
           console.log(data1);
-          if(data1.statuscode===200){
+          if(data1.statusCode===200){
             toast.success(data1.message);
             
             navigate('/');
             fetchUserDetails();
             fetchUserAddToCart()
-          }else{
+          }
+          else{
             toast.error(data1.message)
           }
         } catch (error) {
