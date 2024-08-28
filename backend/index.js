@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser";
 
 dotenv.config()
 const corsOptions = {
-    origin: 'http://localhost:5173', // Replace with your frontend URL
+    origin: 'https://techtronics-frontend.onrender.com', // Replace with your frontend URL
     credentials: true,
   };
 
