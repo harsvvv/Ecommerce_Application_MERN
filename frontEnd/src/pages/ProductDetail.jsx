@@ -26,7 +26,7 @@ const ProductDetail = () => {
   const fetchProductDetails = async () => {
 
     setLoading(true);
-    const response = await fetch("/api/product-details", {
+    const response = await fetch("https://techtronics-y2b2.onrender.com/api/product-details", {
       method: "POST",
       headers: {
         "content-type": "application/json",

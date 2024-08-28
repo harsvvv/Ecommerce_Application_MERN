@@ -67,7 +67,7 @@ const AdminEditProduct = ({ onclose, productData ,fetchData}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/update-product", {
+    const response = await fetch("https://techtronics-y2b2.onrender.com/api/update-product", {
       method: "POST",
       credentials: "include",
       headers: {

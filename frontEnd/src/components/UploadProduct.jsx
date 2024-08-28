@@ -52,7 +52,7 @@ const UploadProduct = ({ onclose,fetchData }) => {
   
  const handleSubmit=async(e)=>{
 e.preventDefault();
-const response=await fetch("/api/upload-product",{
+const response=await fetch("https://techtronics-y2b2.onrender.com/api/upload-product",{
   method:"POST",
   credentials:'include',
   headers:{

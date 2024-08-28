@@ -9,7 +9,7 @@ const CategoryList = () => {
  const categoryLoading=new Array(13).fill(null);
     const fetchCategoryProduct = async () => {
         setLoading(true);
-        const response = await fetch("/api/get-categoryProduct");
+        const response = await fetch("https://techtronics-y2b2.onrender.com/api/get-categoryProduct");
         const dataResponse = await response.json();
         setLoading(false);
         setCategoryProduct(dataResponse.data);

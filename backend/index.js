@@ -17,7 +17,7 @@ const app=express()
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false })) //to be true
 
 // parse application/json
 app.use(bodyParser.json())

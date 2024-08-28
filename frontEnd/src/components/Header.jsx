@@ -24,7 +24,7 @@ const Header = () => {
   
   const handleLogout=async()=>{
     try {
-      const fetchData =await fetch("/api/userLogout",{
+      const fetchData =await fetch("https://techtronics-y2b2.onrender.com/api/userLogout",{
         method:"GET",
         credentials:'include'
       })

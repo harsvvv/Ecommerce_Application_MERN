@@ -15,7 +15,7 @@ const SearchProduct = () => {
     const fetchProduct = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`/api/search${query.search}`);
+            const response = await fetch(`https://techtronics-y2b2.onrender.com/api/search${query.search}`);
             const dataResponse = await response.json();
             setData(dataResponse.data);
         } catch (error) {

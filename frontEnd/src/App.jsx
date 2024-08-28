@@ -18,7 +18,7 @@ function App() {
   
   const fetchUserDetails = async () => {
     try {
-      const dataResponse = await fetch('/api/user-details', {
+      const dataResponse = await fetch('https://techtronics-y2b2.onrender.com/api/user-details', {
         method: 'GET',
         credentials: 'include'
       });
@@ -42,7 +42,7 @@ function App() {
 
   const fetchUserAddToCart = async () => {
     try {
-      const dataResponse = await fetch("/api/countAddToCartProduct", {
+      const dataResponse = await fetch("https://techtronics-y2b2.onrender.com/api/countAddToCartProduct", {
         method: "GET",
         credentials: 'include'
       });

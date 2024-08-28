@@ -4,7 +4,7 @@ const addToCart=async(e,id)=>{
 
 e.preventDefault();
 
-const response=await fetch("/api/addtocart",{
+const response=await fetch("https://techtronics-y2b2.onrender.com/api/addtocart",{
 method:"POST",
 credentials:'include',
 headers:{

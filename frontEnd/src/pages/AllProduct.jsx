@@ -7,7 +7,7 @@ const AllProducts = () => {
   const [openUploadProduct,setOpenUploadProduct]=useState(false);
   const [allProduct,setAllProduct]=useState([]);
   const fetchAllProduct=async()=>{
-    const response=await fetch("/api/get-product");
+    const response=await fetch("https://techtronics-y2b2.onrender.com/api/get-product");
     const responseData=await response.json();
     setAllProduct(responseData?.data || []);
   }

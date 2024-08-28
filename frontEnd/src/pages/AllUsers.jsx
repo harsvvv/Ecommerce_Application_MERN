@@ -15,7 +15,7 @@ const [updateUserDetails,setUpdateUserDetails]=useState({
   _id: '',
 })
 const fetchAlluser=async()=>{
-  const fetchData=await fetch("/api/all-user",{
+  const fetchData=await fetch("https://techtronics-y2b2.onrender.com/api/all-user",{
     method:"GET",
     credentials:'include'
   })

@@ -20,7 +20,7 @@ const ChangeUserRole = ({
       console.log(e.target.value)
     }
     const updateUserRole=async()=>{
-      const fetchResponse=await fetch('/api/update-user',
+      const fetchResponse=await fetch('https://techtronics-y2b2.onrender.com/api/update-user',
         {
           method:"POST",
           credentials: 'include',

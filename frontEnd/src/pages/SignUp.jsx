@@ -43,7 +43,7 @@ const SignUp = () => {
             
             throw new Error("password are not same");
           }
-          const res=await fetch('/api/signup',{
+          const res=await fetch('https://techtronics-y2b2.onrender.com/api/signup',{
             method:"post",
             headers:{
               "content-type":"application/json"

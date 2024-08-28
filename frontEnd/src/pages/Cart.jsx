@@ -11,7 +11,7 @@ const Cart = () => {
   
   const fetchData = async () => {
     setLoading(true);
-    const response = await fetch("/api/view-card-product", {
+    const response = await fetch("https://techtronics-y2b2.onrender.com/api/view-card-product", {
       method: "GET",
       credentials: "include",
       headers: {
@@ -30,7 +30,7 @@ const Cart = () => {
   }, []);
 
   const increaseQty = async (id, qty) => {
-    const response = await fetch("/api/update-cart-product", {
+    const response = await fetch("https://techtronics-y2b2.onrender.com/api/update-cart-product", {
       method: "POST",
       credentials: 'include',
       headers: {
@@ -50,7 +50,7 @@ const Cart = () => {
 
   const decreaseQty = async (id, qty) => {
     if (qty >= 2) {
-      const response = await fetch("/api/update-cart-product", {
+      const response = await fetch("https://techtronics-y2b2.onrender.com/api/update-cart-product", {
         method: "POST",
         credentials: 'include',
         headers: {
@@ -70,7 +70,7 @@ const Cart = () => {
   };
 
   const deleteCartProduct = async (id) => {
-    const response = await fetch("/api/delete-cart-product", {
+    const response = await fetch("https://techtronics-y2b2.onrender.com/api/delete-cart-product", {
       method: "POST",
       credentials: 'include',
       headers: {

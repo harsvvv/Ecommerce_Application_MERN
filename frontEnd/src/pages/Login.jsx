@@ -33,7 +33,7 @@ const Login = () => {
         e.preventDefault();
         try {
           
-          const res=await fetch('/api/login',{
+          const res=await fetch('https://techtronics-y2b2.onrender.com/api/login',{
             method:'POST',
             headers:{
               "content-type":"application/json"
